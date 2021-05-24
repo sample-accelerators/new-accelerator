@@ -1,0 +1,17 @@
+sources:
+  installFromRoot: true
+
+transformations:
+  replace:
+
+    - name: k8sName
+      token: acc-name
+      with: "#k8sName"
+
+    - name: gitUrl
+      token: acc-git-url
+      with: "#gitUrl"
+
+    - name: gitBranch
+      token: acc-git-branch
+      with: "#gitBranch"
