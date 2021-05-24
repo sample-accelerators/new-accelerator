@@ -1,4 +1,4 @@
-# hello-acc
+# new-accelerator
 
 New accelerator accelerator with options for:
 
