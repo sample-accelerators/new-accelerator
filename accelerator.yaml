@@ -1,7 +1,7 @@
 accelerator:
   displayName: New Accelerator
   description: Generate yaml for a new k8s Accelerator resource.
-  iconUrl: https://github.com/simple-starters/icons/blob/master/icon-tanzu-light.png
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
   tags:
     - k8s-config
     - tanzu
