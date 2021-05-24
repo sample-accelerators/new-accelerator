@@ -4,9 +4,9 @@ sources:
 transformations:
   replace:
 
-    - name: kubernetesName
+    - name: acceleratorName
       token: acc-name
-      with: "#kubernetesName"
+      with: "#acceleratorName"
 
     - name: gitUrl
       token: acc-git-url
