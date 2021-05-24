@@ -7,7 +7,7 @@ accelerator:
     - tanzu
     - accelerator
   options:
-    - name: k8sName
+    - name: kubernetesName
       description: Kubernetes resource name - see https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
       required: true
       dataType: string
