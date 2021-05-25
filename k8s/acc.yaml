@@ -4,10 +4,8 @@ metadata:
   name: "acc-name"
 spec:
   tags:
-    - "new-accelerator"
+    - "meta"
   git:
     url: "acc-git-url"
     ref:
-      # use branch, tag, semver, or commit
-      # see https://fluxcd.io/docs/components/source/gitrepositories/
       branch: "acc-git-branch"
