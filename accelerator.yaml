@@ -1,17 +1,17 @@
 accelerator:
   displayName: New Accelerator
-  description: Generate yaml for a new k8s Accelerator resource.
+  description: Generate yaml for a new Accelerator resource.
   iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
   tags:
-    - k8s-config
-    - tanzu
-    - accelerator
+    - Tanzu
+    - Accelerator
   options:
     - name: acceleratorName
       description: Kubernetes resource name - see https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
       required: true
       dataType: string
       inputType: text
+      defaultValue: new-accelerator
     - name: gitUrl
       description: GitHub or GitLab repository url
       dataType: string
@@ -22,3 +22,4 @@ accelerator:
       dataType: string
       inputType: text
       required: true
+      defaultValue: main
