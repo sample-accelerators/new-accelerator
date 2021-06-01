@@ -11,7 +11,6 @@ accelerator:
       required: true
       dataType: string
       inputType: text
-      defaultValue: new-accelerator
     - name: gitUrl
       description: GitHub or GitLab repository url
       dataType: string
