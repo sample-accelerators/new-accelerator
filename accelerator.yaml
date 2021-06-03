@@ -22,3 +22,18 @@ accelerator:
       inputType: text
       required: true
       defaultValue: main
+
+engine:
+  resources:
+    - name: specific-file
+      includes: ["k8s/acc.yaml"]
+      transformations:
+        replace:
+          - token: acc-name
+            with: "#acceleratorName"
+          - token: acc-git-url
+            with: "#gitUrl"
+          - token: acc-git-branch
+            with: "#gitBranch"
+    - name: the-rest
+      includes: ["**"]
