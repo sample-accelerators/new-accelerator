@@ -38,7 +38,5 @@ engine:
             with: "#gitUrl"
           - token: acc-git-branch
             with: "#gitBranch"
-          - token: acc-description
-            with: "#projectDescription"
     - name: the-rest
       includes: ["**"]
