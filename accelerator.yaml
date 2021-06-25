@@ -28,7 +28,6 @@ accelerator:
 
 engine:
   sources:
-    - includes: ["**"]
     - includes: ["kubernetes/acc.yaml"]
       transformations:
       - type: ReplaceText
@@ -41,3 +40,5 @@ engine:
           with: "#gitBranch"
       - type: RewritePath
         rewriteTo: "'kubernetes/' + #acceleratorName + '.yaml'"
+    - includes: ["**"]
+      excludes: ["kubernetes/acc.yaml"]
