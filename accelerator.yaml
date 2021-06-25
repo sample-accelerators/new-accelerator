@@ -7,7 +7,7 @@ accelerator:
     - Accelerator
   options:
     - name: acceleratorName
-      label: Name for Kubernetes
+      label: Name for Accelerator Resource
       description: Kubernetes resource name - see https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
       required: true
       dataType: string
@@ -27,16 +27,17 @@ accelerator:
       defaultValue: main
 
 engine:
-  resources:
-    - name: specific-file
-      includes: ["k8s/acc.yaml"]
+  sources:
+    - includes: ["**"]
+    - includes: ["kubernetes/acc.yaml"]
       transformations:
-        replace:
-          - token: acc-name
-            with: "#acceleratorName"
-          - token: acc-git-url
-            with: "#gitUrl"
-          - token: acc-git-branch
-            with: "#gitBranch"
-    - name: the-rest
-      includes: ["**"]
+      - type: ReplaceText
+        substitutions:
+        - text: acc-name
+          with: "#acceleratorName"
+        - text: acc-git-url
+          with: "#gitUrl"
+        - text: acc-git-branch
+          with: "#gitBranch"
+      - type: RewritePath
+        rewriteTo: "'kubernetes/' + #acceleratorName + '.yaml'"
