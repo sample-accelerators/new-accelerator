@@ -6,15 +6,15 @@ accelerator:
     - Tanzu
     - Accelerator
   options:
-    - name: name
-      label: K8s resource name
+    - name: acceleratorName
+      label: Name of Accelerator
       required: true
 
-    - name: url
+    - name: gitUrl
       label: Git Repository URL
       required: true
 
-    - name: branch
+    - name: gitBranch
       label: Git Branch
       required: true
       defaultValue: main
@@ -32,6 +32,21 @@ accelerator:
 
 engine:
   merge:
-    - type: YTT
-    - include:
-        - README.md
+    - include: ["*.yaml"]
+      chain:
+      - type: YTT
+      - merge:
+        - include: ["k8s-resource.yaml"]
+          chain:
+          - type: RewritePath
+            rewriteTo: "'kubernetes/' + #acceleratorName + '.yaml'"
+        - include: ["new-accelerator.yaml"]
+          chain:
+          - type: RewritePath
+            rewriteTo: "'accelerator.yaml'"
+    - include: [README.md]
+      chain:
+      - type: ReplaceText
+        substitutions:
+        - text: k8s-resource
+          with: "'kubernetes/' + #acceleratorName"
