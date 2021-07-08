@@ -5,6 +5,11 @@ accelerator:
   iconUrl: #@ data.values.icon
   tags: #@ data.values.tags
   options:
+    - name: optionName
+      label: Nice Label
+      display: true
+      defaultValue: ""
+
   #! - name:
   #!   label:
   #!   description:
@@ -15,6 +20,8 @@ accelerator:
   #!   display:
 
 engine:
+  include: ["**"]
+
   #! let:
   #! - name: theAnswer
   #!   expression: "41 + 1"

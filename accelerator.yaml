@@ -24,6 +24,7 @@ accelerator:
       inputType: tag
       dataType: [string]
       defaultValue: []
+      display: true
 
     - name: icon
       label: Icon URL
