@@ -18,4 +18,7 @@ accelerator:
       defaultValue: main
 
 engine:
-  type: YTT
+  merge:
+    - type: YTT
+    - include:
+        - README.md
