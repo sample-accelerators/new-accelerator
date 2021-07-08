@@ -2,9 +2,9 @@
 apiVersion: accelerator.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
-  name: #@ data.values.acceleratorName
+  name: #@ data.values.name
 spec:
   git:
-    url: #@ data.values.gitUrl
+    url: #@ data.values.url
     ref:
-      branch: #@ data.values.gitBranch
+      branch: #@ data.values.branch

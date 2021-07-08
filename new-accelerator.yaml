@@ -1,0 +1,26 @@
+#@ load("@ytt:data", "data")
+accelerator:
+  displayName: #@ data.values.projectName
+  description: #@ data.values.projectDescription
+  iconUrl: #@ data.values.icon
+  tags: #@ data.values.tags
+  options:
+  # - name:
+  #   label:
+  #   description:
+  #   dataType:
+  #   inputType:
+  #   defaultValue:
+  #   required:
+  #   display:
+
+engine:
+  # let:
+  # - name: theAnswer
+  #   expression: "41 + 1"
+  # include: [patterns...]
+  # exclude: [patterns...]
+  # merge
+  # - <transform>
+  # chain
+  # - <transform>
