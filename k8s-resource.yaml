@@ -1,3 +1,4 @@
+#@ load("@ytt:data", "data")
 apiVersion: accelerator.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
