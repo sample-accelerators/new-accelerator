@@ -6,30 +6,27 @@ accelerator:
     - Tanzu
     - Accelerator
   options:
-# name
     - name: name
       label: K8s resource name
       required: true
-# url
+
     - name: url
       label: Git Repository URL
       required: true
-# branch
+
     - name: branch
       label: Git Branch
       required: true
       defaultValue: main
-# tags
+
     - name: tags
       label: Tags
       inputType: tag
       dataType: [string]
       defaultValue: []
-      display: true
-# icon
+
     - name: icon
       label: Icon URL
-      display: true
       defaultValue: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
 
 engine:
