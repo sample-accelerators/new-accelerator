@@ -10,6 +10,10 @@ accelerator:
       label: K8s resource name
       required: true
 
+    - name: description
+      display: true
+      defaultValue: ''
+
     - name: url
       label: Git Repository URL
       required: true
