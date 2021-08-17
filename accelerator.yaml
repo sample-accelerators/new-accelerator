@@ -6,13 +6,14 @@ accelerator:
     - Tanzu
     - Accelerator
   options:
+    - name: description
+      label: Description
+      display: true
+      defaultValue: ''
+
     - name: name
       label: K8s resource name
       required: true
-
-    - name: description
-      display: true
-      defaultValue: ''
 
     - name: url
       label: Git Repository URL
