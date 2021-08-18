@@ -1,7 +1,7 @@
 accelerator:
   displayName: New Accelerator
   description: Generate yaml for a new Accelerator resource.
-  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
+  iconUrl: https://raw.githubusercontent.com/sample-accelerators/icons/master/icon-tanzu-light.png
   tags:
     - Tanzu
     - Accelerator
