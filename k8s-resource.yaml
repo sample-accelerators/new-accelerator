@@ -8,3 +8,6 @@ spec:
     url: #@ data.values.url
     ref:
       branch: #@ data.values.branch
+    #@ if data.values.interval > "":
+    interval: #@ data.values.interval
+    #@ end

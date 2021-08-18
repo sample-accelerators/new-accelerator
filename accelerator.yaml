@@ -24,6 +24,11 @@ accelerator:
       required: true
       defaultValue: main
 
+    - name: interval
+      label: The interval at which to check for Git repository updates
+      dataType: string
+      defaultValue: ""
+
     - name: tags
       label: Tags
       inputType: tag
