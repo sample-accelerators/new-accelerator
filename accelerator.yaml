@@ -33,7 +33,7 @@ accelerator:
 
     - name: icon
       label: Icon URL
-      defaultValue: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
+      defaultValue: https://raw.githubusercontent.com/sample-accelerators/icons/master/icon-tanzu-light.png
 
 engine:
   merge:

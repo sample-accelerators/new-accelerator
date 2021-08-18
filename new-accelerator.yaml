@@ -10,24 +10,6 @@ accelerator:
       display: true
       defaultValue: ""
 
-  #! - name:
-  #!   label:
-  #!   description:
-  #!   dataType:
-  #!   inputType:
-  #!   defaultValue:
-  #!   required:
-  #!   display:
-
 engine:
   include: ["**"]
 
-  #! let:
-  #! - name: theAnswer
-  #!   expression: "41 + 1"
-  #! include: [patterns...]
-  #! exclude: [patterns...]
-  #! merge
-  #! - <transform>
-  #! chain
-  #! - <transform>
