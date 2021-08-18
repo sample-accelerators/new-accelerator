@@ -38,5 +38,6 @@ accelerator:
 engine:
   merge:
     - type: YTT
+      extraArgs: ["'--file-mark'",  "'new-accelerator.yaml:path=accelerator.yaml'"]
     - include:
-        - README.md
+      - README.md
