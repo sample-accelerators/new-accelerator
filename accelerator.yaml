@@ -16,16 +16,16 @@ accelerator:
       required: true
 
     - name: url
-      label: Git Repository URL
+      label: Git repository URL
       required: true
 
     - name: branch
-      label: Git Branch
+      label: Git branch
       required: true
       defaultValue: main
 
     - name: interval
-      label: The interval at which to check for Git repository updates
+      label: Git repo update interval
       dataType: string
       defaultValue: ""
 
