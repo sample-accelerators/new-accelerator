@@ -9,7 +9,7 @@ accelerator:
     - name: description
       label: Description
       display: true
-      defaultValue: ''
+      defaultValue: ""
 
     - name: name
       label: K8s resource name
@@ -43,6 +43,11 @@ accelerator:
 engine:
   merge:
     - type: YTT
-      extraArgs: ["'--file-mark'",  "'new-accelerator.yaml:path=accelerator.yaml'"]
+      extraArgs:
+        [
+          "'--file-mark'",
+          "'new-accelerator.yaml:path=accelerator.yaml'",
+          --ignore-unknown-comments,
+        ]
     - include:
-      - README.md
+        - README.md

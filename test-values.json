@@ -1,0 +1,12 @@
+{
+  "projectName": "new-accelerator",
+  "description": "test description",
+  "name": "test-readme",
+  "url": "https://github.com/jldec/readme",
+  "branch": "main",
+  "tags": [
+    "test-new-accelerator"
+  ],
+  "interval": "10s",
+  "icon": "https://raw.githubusercontent.com/sample-accelerators/icons/master/icon-tanzu-light.png"
+}

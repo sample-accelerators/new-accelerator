@@ -4,11 +4,11 @@ accelerator:
   description: #@ data.values.description
   iconUrl: #@ data.values.icon
   tags: #@ data.values.tags
-  options:
-    - name: optionName
-      label: Nice Label
-      display: true
-      defaultValue: ""
+  # options:
+  #   - name: optionName
+  #     label: Nice Label
+  #     display: true
+  #     defaultValue: ""
 
 engine:
   include: ["**"]
