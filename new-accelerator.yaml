@@ -3,7 +3,7 @@ accelerator:
   displayName: #@ data.values.projectName
   description: #@ data.values.description
   iconUrl: #@ data.values.icon
-  tags: #@ data.values.tags
+  tags: []
   options:
     - name: optionName
       label: Nice Label

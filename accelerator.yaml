@@ -24,13 +24,6 @@ accelerator:
       required: true
       defaultValue: main
 
-    - name: tags
-      label: Tags
-      inputType: tag
-      dataType: [string]
-      defaultValue: []
-      display: true
-
     - name: icon
       label: Icon URL
       defaultValue: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
